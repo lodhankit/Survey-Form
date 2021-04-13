@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<body>
+<head>
+  <link rel = "stylesheet" href = "style.css">
+  <title>
+    Survey-Form
+  </title>
+</head>
+<h1 id = "title">Online Course Survey Form</h1>
+<p id = "description"><em>Thank you for taking the time to help us improve the platform<em></p>
+  <div id = "division">
+    <form id = "survey-form">
+      <div id = "f">
+      <fieldset id = "field1">
+        <legend class = "legend">Personal Details:</legend>
+        <div id = "label">
+        <label for = "name" id = "name-label">Name:</label><br>
+        <div id = "placeholder">
+        <input type = "text" id = "name" placeholder="Name" required><br><br></div>
+        <label for="email" id = "email-label">Email:</label><br>
+        <div id = "placeholder">
+        <input type="email" id="email" name="email" placeholder="Email" required><br><br></div>
+        <label for="birthday">Birthday:</label><br>
+        <div id = "placeholder">
+        <input type="date" id="birthday" name="birthday" placeholder="Birthday"><br><br></div>
+        <label for="number" id = "number-label" >Total Course You Take:</label><br>
+        <div id = "placeholder">
+        <input type="number" id="number" name="no" min = "1" max = "2000" placeholder="Course Number"><br><br>
+        </div>
+      </fieldset>
+
+    <fieldset id = "field2">
+      <legend class = "legend2">Course Quality:</legend>
+      <p>Overall how you rate the course:</p><br>
+      <label class="container">
+      <input name="recommend" type = "radio"  value = "Exellent"/>Exellent
+      <span class="checkmark"></span>
+    </label>
+      <br>
+      <label class="container">
+      <input name="recommend" type = "radio" value = "Very Good"/>Very Good
+      <span class="checkmark"></span>
+    </label>
+      <span class="checkmark"></span>
+      <br>
+      <label class="container">
+      <input name="recommend" type = "radio" value = "Good"/>Good
+      <span class="checkmark"></span>
+    </label>
+      <span class="checkmark"></span>
+      <br>
+      <label class="container">
+      <input name="recommend" type = "radio" value = "Fair"/>Fair
+      <span class="checkmark"></span>
+    </label>
+      <br>
+      <label class="container">
+      <input name="recommend" type = "radio" value = "Poor"/>Poor
+      <span class="checkmark"></span>
+    </label>
+      <br><br>
+      <label  id = "droq" for="dropdown"> What device do you use for distance learning?</label><br><br>
+
+      <select name="dropdown" id="dropdown">
+      <option value="Laptop">Laptop</option>
+      <option value="Desktop">Desktop</option>
+      <option value="Tablet">Tablet</option>
+      <option value="Smartphone">Smartphone</option>
+       </select>
+       <p>How can we improve our Courses?</p><br>
+       <label class="container">
+       <input name="prefer" type = "checkbox"  value = "Exellent"/>Good Instructor
+     <span class="checkmark"></span></label><br>
+       <label class="container">
+       <input name="prefer" type = "checkbox" value = "Very Good"/>Improved Project
+     <span class="checkmark"></span></label><br>
+       <label class="container">
+       <input  name="prefer" type = "checkbox" value = "Good"/>Forums
+     <span class="checkmark"></span></label><br>
+       <label class="container">
+       <input  name="prefer" type = "checkbox" value = "Fair"/>Video Quality
+     <span class="checkmark"></span></label><br>
+       <label class="container">
+       <input  name="prefer" type = "checkbox" value = "Poor"/>Other:
+     <span class="checkmark"></span></label><br><br>
+       <div id = "text">
+       <textarea id = "comments" placeholder = "please explain here ...."></textarea>
+     </div>
+    </fieldset>
+  </div>
+    <div id = "button">
+    <button id = "submit" type = "submit"><div id = "s">Submit</div></button>
+  </div>
+</div>
+    </form>
+
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
